@@ -8,6 +8,7 @@
     <Company>TTN</Company>
     <Authors>fenglui</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

@@ -142,16 +142,5 @@ namespace System
 
         #endregion
 
-        #region [IsHasChinese]
-        public const string RegexPatternHasCHINESE = "[\u4e00-\u9fa5]";
-        private static Regex isHasChineseRegex = new Regex(RegexPatternHasCHINESE, RegexOptions.Compiled);
-
-        public static bool IsHasChinese(this string inputString)
-        {
-            Match m = isHasChineseRegex.Match(inputString);
-            return m.Success;
-        }
-        #endregion
-
     }
 }
