@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/fenglui/ttn.Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fenglui/ttn.Extensions.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Company>TTN</Company>
+    <Authors>fenglui</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
