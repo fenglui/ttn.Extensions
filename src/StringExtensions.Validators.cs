@@ -440,8 +440,10 @@ namespace System
          中国电信发布中国3G号码段:中国联通185,186;中国移动188,187;中国电信189,180共6个号段。
          3G业务专属的180-189号段已基本分配给各运营商使用, 其中180、189分配给中国电信,187、188归中国移动使用,185、186属于新联通。
          中国移动拥有号码段：139、138、137、136、135、134、159、158、157（3G）、152、151、150、183、188（3G）、187（3G）;14个号段
+
          中国联通拥有号码段：130、131、132、155、156（3G）、186（3G）、185（3G）;6个号段
          中国电信拥有号码段：133、153、189（3G）、180（3G）;4个号码段
+         181 、1700、177、173
          移动:
              2G号段(GSM网络)有139,138,137,136,135,134(0-8),159,158,152,151,150
              3G号段(TD-SCDMA网络)有157,188,187
@@ -464,7 +466,7 @@ namespace System
         /// <returns></returns>
         public static bool IsChinaTeleComMobile(this string val)
         {
-            return Regex.IsMatch(val, @"^(\+86|86|0)?((133)\d{8}|(153|180|181|189)\d{8})$", RegexOptions.IgnoreCase);
+            return Regex.IsMatch(val, @"^(\+86|86|0)?((133)\d{8}|(153|180|181|189|177|173|170)\d{8})$", RegexOptions.IgnoreCase);
         }
 
         /// <summary>
@@ -494,7 +496,7 @@ namespace System
         /// <param name="val"></param>
         public static bool IsMobile(this string val)
         {
-            return Regex.IsMatch(val, @"^(\+86|86|0)?(13\d{9}|(145|147|150|151|152|153|155|156|157|158|159|180|181|182|183|185|186|187|188|189)\d{8})$", RegexOptions.IgnoreCase);
+            return Regex.IsMatch(val, @"^(\+86|86|0)?(13\d{9}|(145|147|150|151|152|153|155|156|157|158|159|170|173|177|180|181|182|183|185|186|187|188|189)\d{8})$", RegexOptions.IgnoreCase);
         }
 
 
